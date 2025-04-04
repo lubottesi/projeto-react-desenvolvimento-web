@@ -1,3 +1,4 @@
+// src/components/cepSearch.js
 import React, { useState } from "react";
 
 const CepSearch = () => {
@@ -16,28 +17,30 @@ const CepSearch = () => {
       const result = await response.json();
       if (result.erro) {
         setError("CEP não encontrado");
+        setData(null);
       } else {
         setData(result);
       }
     } catch {
       setError("Erro ao buscar CEP");
+      setData(null);
     }
   };
 
   return (
-    <div className="p-4 bg-white shadow rounded text-center">
-      <h2 className="text-xl font-bold">Buscador de CEP</h2>
+    <div className="cep-search">
+      <h2>Buscador de CEP</h2>
       <input
         type="text"
         value={cep}
         onChange={(e) => setCep(e.target.value)}
-        className="border p-2 w-full"
-        placeholder="Digite o CEP"
+        className="cep-input"
+        placeholder="Digite o CEP (ex: 01001000)"
       />
-      <button onClick={fetchCep} className="bg-blue-500 text-white p-2 mt-2">Buscar</button>
-      {error && <p className="text-red-500 mt-2">{error}</p>}
+      <button onClick={fetchCep} className="cep-button">Buscar</button>
+      {error && <p className="cep-error">{error}</p>}
       {data && (
-        <div className="mt-4 text-left">
+        <div className="cep-result">
           <p><strong>Logradouro:</strong> {data.logradouro}</p>
           <p><strong>Bairro:</strong> {data.bairro}</p>
           <p><strong>Cidade:</strong> {data.localidade} - {data.uf}</p>

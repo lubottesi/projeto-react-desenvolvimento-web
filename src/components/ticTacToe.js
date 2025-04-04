@@ -27,22 +27,21 @@ const TicTacToe = () => {
   };
 
   return (
-    <div className="p-4 bg-white shadow rounded text-center">
-      <h2 className="text-xl font-bold">Jogo da Velha</h2>
-      <div className="grid grid-cols-3 gap-2 w-40 mx-auto">
+    <div className="tictactoe">
+      <h2>Jogo da Velha</h2>
+      <div className="tictactoe-grid">
         {board.map((cell, index) => (
-          <button
-            key={index}
-            className="w-12 h-12 text-xl border bg-gray-200"
-            onClick={() => handleClick(index)}
-          >
+          <button key={index} onClick={() => handleClick(index)}>
             {cell}
           </button>
         ))}
       </div>
-      {checkWinner() && <p className="mt-2 text-lg font-bold text-green-500">Vencedor: {checkWinner()}</p>}
+      {checkWinner() && (
+        <p className="winner">Vencedor: {checkWinner()}</p>
+      )}
     </div>
   );
+  
 };
 
 export default TicTacToe;

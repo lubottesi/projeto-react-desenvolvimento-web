@@ -115,3 +115,217 @@ nav ul {
 .todo-list button:hover {
   background-color: #5a42d1;
 }
+
+
+
+
+.click-counter {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 12rem auto;
+  text-align: center;
+}
+
+.click-counter h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #cfcfe4;
+}
+
+.counter-value {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+  font-weight: bold;
+  color: #7f5af0;
+}
+
+.click-counter button {
+  background-color: #7f5af0;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.click-counter button:hover {
+  background-color: #684ed0;
+}
+
+
+
+.tictactoe {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 12rem auto;
+  text-align: center;
+}
+
+.tictactoe h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #cfcfe4;
+}
+
+.tictactoe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.tictactoe button {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #2a2a3c;
+  border: 2px solid #444;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tictactoe button:hover {
+  background-color: #3b3b51;
+}
+
+.tictactoe .winner {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #7f5af0;
+}
+
+
+.calculator {
+  background-color: #1e1e2f;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  margin: 12rem auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.calculator h2 {
+  margin-bottom: 1rem;
+  color: #cfcfe4;
+}
+
+.calculator-display {
+  width: 94%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #2a2a3c;
+  color: #ffffff;
+  text-align: right;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calculator-grid button {
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b3b51;
+  color: #ffffff;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.calculator-grid button:hover {
+  background-color: #505073;
+}
+
+.clear-button {
+  grid-column: span 4;
+  background-color: #ef4444;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.clear-button:hover {
+  background-color: #dc2626;
+}
+
+
+.cep-search {
+  background-color: #1e1e2f;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 12rem auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cep-search h2 {
+  margin-bottom: 1rem;
+  color: #cfcfe4;
+}
+
+.cep-input {
+  width: 94%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #2a2a3c;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.cep-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cep-button:hover {
+  background-color: #4338ca;
+}
+
+.cep-error {
+  color: #ef4444;
+  margin-top: 1rem;
+}
+
+.cep-result {
+  margin-top: 1.5rem;
+  background-color: #2a2a3c;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

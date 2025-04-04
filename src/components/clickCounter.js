@@ -1,15 +1,14 @@
 import React, { useState } from "react";
+import "../App.css"; // Certifique-se de que o estilo global está importado
 
 const ClickCounter = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="p-4 bg-white shadow rounded text-center">
-      <h2 className="text-xl font-bold">Contador de Cliques</h2>
-      <p className="text-2xl my-4">{count}</p>
-      <button onClick={() => setCount(count + 1)} className="bg-green-500 text-white p-2 rounded">
-        Clique Aqui
-      </button>
+    <div className="click-counter">
+      <h2>Contador de Cliques</h2>
+      <p className="counter-value">{count}</p>
+      <button onClick={() => setCount(count + 1)}>Clique Aqui</button>
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Header = () => {
     { path: "/counter", name: "Click Counter" },
     { path: "/tic-tac-toe", name: "Tic-Tac-Toe" },
     { path: "/calculator", name: "Calculator" },
-    { path: "/cep-search", name: "ZIP Code Finder" },
+    { path: "/cep-search", name: "CEP Search" },
   ];
 
   return (
